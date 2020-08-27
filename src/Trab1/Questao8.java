@@ -17,11 +17,21 @@ public class Questao8 {
 		System.out.println( "Por favor, informe o coeficiente de c : " );
 		int c = leTeclado.nextInt();
 
-		tmp = Math.pow (b,2) * a * c ;
-		x1 = (b + Math.sqrt(tmp)) / 2 * a ;
-		x2 = (b - Math.sqrt(tmp)) / 2 * a ;
+		tmp = Math.pow (b,2) - (4 * a * c);
 
-		System.out.println("X1 = " + x1 + " e X2 = " + x2 );
+		if(tmp<0) {
+			System.out.println("Não possui raízes");
+			
+		}else if(tmp==0){
+			
+			double x = (-b + Math.sqrt(tmp)) / 2 * a ;
+			System.out.println("Raiz" + x);
+			
+		}else {
+			x1 = (-b + Math.sqrt(tmp)) / 2 * a ;
+			x2 = (-b - Math.sqrt(tmp)) / 2 * a ;
+			System.out.println("Raiz1 = " + x1 + " e Raiz2 = " + x2 );
+		}
 		leTeclado.close();
 	}
 }

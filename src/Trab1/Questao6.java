@@ -12,8 +12,9 @@ public class Questao6 {
 		f = leTeclado.next();
 
 
-		//Professor, não consegui fazer essa. :(
-
+		/*Professor, não consegui fazer essa. Acho que funcionaria com vetor,
+		 mas não tenho certeza e nem sei bem como usar. :(
+			*/
 
 			leTeclado.close();
 		}
